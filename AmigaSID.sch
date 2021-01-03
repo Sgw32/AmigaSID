@@ -1,0 +1,1065 @@
+EESchema Schematic File Version 4
+LIBS:AmigaSID-cache
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS00 U3
+U 1 1 5FAC54E2
+P 9600 5950
+F 0 "U3" H 9600 6275 50  0000 C CNN
+F 1 "74LS00" H 9600 6184 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 9600 5950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 9600 5950 50  0001 C CNN
+	1    9600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L AmigaSID-rescue:74HC688-74xx U1
+U 1 1 5FAC7B4E
+P 7000 6350
+F 0 "U1" H 7544 6396 50  0000 L CNN
+F 1 "74HC688" H 7544 6305 50  0000 L CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 7000 6350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd54hc688.pdf" H 7000 6350 50  0001 C CNN
+	1    7000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC237 Q1
+U 1 1 5FB0FAD9
+P 13700 4350
+F 0 "Q1" H 13891 4396 50  0000 L CNN
+F 1 "BC237" H 13891 4305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 13900 4275 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC237-D.PDF" H 13700 4350 50  0001 L CNN
+	1    13700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FB10FCC
+P 13800 5050
+F 0 "R5" H 13870 5096 50  0000 L CNN
+F 1 "1k" H 13870 5005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 13730 5050 50  0001 C CNN
+F 3 "~" H 13800 5050 50  0001 C CNN
+	1    13800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FB1208B
+P 12450 4350
+F 0 "R4" V 12243 4350 50  0000 C CNN
+F 1 "10k" V 12334 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12380 4350 50  0001 C CNN
+F 3 "~" H 12450 4350 50  0001 C CNN
+	1    12450 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FB17A86
+P 11950 4700
+F 0 "R3" H 12020 4746 50  0000 L CNN
+F 1 "1k" H 12020 4655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11880 4700 50  0001 C CNN
+F 3 "~" H 11950 4700 50  0001 C CNN
+	1    11950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0101
+U 1 1 5FB17AEB
+P 11950 5000
+F 0 "#PWR0101" H 11950 4750 50  0001 C CNN
+F 1 "GND" H 11955 4827 50  0000 C CNN
+F 2 "" H 11950 5000 60  0000 C CNN
+F 3 "" H 11950 5000 60  0000 C CNN
+	1    11950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0102
+U 1 1 5FB18AEF
+P 13800 5350
+F 0 "#PWR0102" H 13800 5100 50  0001 C CNN
+F 1 "GND" H 13805 5177 50  0000 C CNN
+F 2 "" H 13800 5350 60  0000 C CNN
+F 3 "" H 13800 5350 60  0000 C CNN
+	1    13800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FB19783
+P 12850 4700
+F 0 "C4" H 12965 4746 50  0000 L CNN
+F 1 "1n" H 12965 4655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 12888 4550 50  0001 C CNN
+F 3 "~" H 12850 4700 50  0001 C CNN
+	1    12850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5FB1B5E4
+P 13950 6700
+F 0 "C11" H 14065 6746 50  0000 L CNN
+F 1 "100n" H 14065 6655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 13988 6550 50  0001 C CNN
+F 3 "~" H 13950 6700 50  0001 C CNN
+	1    13950 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5FB1B88B
+P 9600 3750
+F 0 "C6" H 9715 3796 50  0000 L CNN
+F 1 "470n" H 9715 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 9638 3600 50  0001 C CNN
+F 3 "~" H 9600 3750 50  0001 C CNN
+	1    9600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 4550 11950 4350
+Wire Wire Line
+	11950 4350 12300 4350
+Wire Wire Line
+	12600 4350 12850 4350
+Wire Wire Line
+	12850 4350 12850 4550
+Wire Wire Line
+	12850 4350 13500 4350
+Connection ~ 12850 4350
+Wire Wire Line
+	13800 4550 13800 4700
+Wire Wire Line
+	13800 5200 13800 5350
+$Comp
+L Device:CP C8
+U 1 1 5FB20750
+P 14550 4700
+F 0 "C8" V 14805 4700 50  0000 C CNN
+F 1 "10u" V 14714 4700 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 14588 4550 50  0001 C CNN
+F 3 "~" H 14550 4700 50  0001 C CNN
+	1    14550 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5FB250FC
+P 14450 6250
+F 0 "C5" V 14705 6250 50  0000 C CNN
+F 1 "10u" V 14614 6250 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 14488 6100 50  0001 C CNN
+F 3 "~" H 14450 6250 50  0001 C CNN
+	1    14450 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FB26D93
+P 11700 2650
+F 0 "C1" V 11448 2650 50  0000 C CNN
+F 1 "22u" V 11539 2650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 11738 2500 50  0001 C CNN
+F 3 "~" H 11700 2650 50  0001 C CNN
+	1    11700 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FB29B55
+P 12750 2650
+F 0 "C2" V 12498 2650 50  0000 C CNN
+F 1 "47u" V 12589 2650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 12788 2500 50  0001 C CNN
+F 3 "~" H 12750 2650 50  0001 C CNN
+	1    12750 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FB2A61D
+P 15600 4700
+F 0 "J1" H 15680 4692 50  0000 L CNN
+F 1 "Conn_01x02" H 15680 4601 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 15600 4700 50  0001 C CNN
+F 3 "~" H 15600 4700 50  0001 C CNN
+	1    15600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5FB2DACF
+P 15600 6250
+F 0 "J2" H 15680 6242 50  0000 L CNN
+F 1 "Conn_01x02" H 15680 6151 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 15600 6250 50  0001 C CNN
+F 3 "~" H 15600 6250 50  0001 C CNN
+	1    15600 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0103
+U 1 1 5FB2F438
+P 11900 2800
+F 0 "#PWR0103" H 11900 2550 50  0001 C CNN
+F 1 "GND" H 11905 2627 50  0000 C CNN
+F 2 "" H 11900 2800 60  0000 C CNN
+F 3 "" H 11900 2800 60  0000 C CNN
+	1    11900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0104
+U 1 1 5FB303BF
+P 12950 2800
+F 0 "#PWR0104" H 12950 2550 50  0001 C CNN
+F 1 "GND" H 12955 2627 50  0000 C CNN
+F 2 "" H 12950 2800 60  0000 C CNN
+F 3 "" H 12950 2800 60  0000 C CNN
+	1    12950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 2650 11900 2650
+Wire Wire Line
+	11900 2650 11900 2800
+Wire Wire Line
+	12900 2650 12950 2650
+Wire Wire Line
+	12950 2650 12950 2800
+Wire Wire Line
+	1800 6450 3300 6450
+Wire Wire Line
+	3300 6450 3300 1700
+Wire Wire Line
+	3300 1700 12500 1700
+Wire Wire Line
+	13800 1700 13800 3100
+Wire Wire Line
+	12500 2650 12500 1700
+Connection ~ 12500 1700
+Wire Wire Line
+	12500 1700 13800 1700
+Wire Wire Line
+	14400 4700 13800 4700
+Connection ~ 13800 4700
+Wire Wire Line
+	13800 4700 13800 4900
+Wire Wire Line
+	15400 4700 15300 4700
+Wire Wire Line
+	15400 6250 14600 6250
+Wire Wire Line
+	14300 6250 13950 6250
+Wire Wire Line
+	13950 6250 13950 6550
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0105
+U 1 1 5FB38F2E
+P 15400 4950
+F 0 "#PWR0105" H 15400 4700 50  0001 C CNN
+F 1 "GND" H 15405 4777 50  0000 C CNN
+F 2 "" H 15400 4950 60  0000 C CNN
+F 3 "" H 15400 4950 60  0000 C CNN
+	1    15400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0106
+U 1 1 5FB391C2
+P 15400 6450
+F 0 "#PWR0106" H 15400 6200 50  0001 C CNN
+F 1 "GND" H 15405 6277 50  0000 C CNN
+F 2 "" H 15400 6450 60  0000 C CNN
+F 3 "" H 15400 6450 60  0000 C CNN
+	1    15400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0107
+U 1 1 5FB39434
+P 13950 7000
+F 0 "#PWR0107" H 13950 6750 50  0001 C CNN
+F 1 "GND" H 13955 6827 50  0000 C CNN
+F 2 "" H 13950 7000 60  0000 C CNN
+F 3 "" H 13950 7000 60  0000 C CNN
+	1    13950 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 4800 15400 4950
+Wire Wire Line
+	15400 6350 15400 6450
+Wire Wire Line
+	13950 6850 13950 7000
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0108
+U 1 1 5FB3ABFF
+P 12850 5000
+F 0 "#PWR0108" H 12850 4750 50  0001 C CNN
+F 1 "GND" H 12855 4827 50  0000 C CNN
+F 2 "" H 12850 5000 60  0000 C CNN
+F 3 "" H 12850 5000 60  0000 C CNN
+	1    12850 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 4850 11950 5000
+Wire Wire Line
+	12850 4850 12850 5000
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FB3D287
+P 3950 4400
+F 0 "H1" V 4187 4403 50  0000 C CNN
+F 1 "MountingHole_Pad" V 4096 4403 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D0.7mm_L6.5mm_W1.8mm_FlatFork" H 3950 4400 50  0001 C CNN
+F 3 "~" H 3950 4400 50  0001 C CNN
+	1    3950 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 1300 7500 1300
+Wire Wire Line
+	7500 1300 7500 5450
+Wire Wire Line
+	8450 5400 8450 4600
+Connection ~ 7500 1300
+Wire Wire Line
+	6500 7250 3850 7250
+Wire Wire Line
+	3850 7250 3850 9650
+Wire Wire Line
+	3850 9650 1800 9650
+Wire Wire Line
+	6500 5450 5700 5450
+Wire Wire Line
+	5700 5450 5700 3100
+Wire Wire Line
+	5700 3100 1800 3100
+Wire Wire Line
+	1800 3200 5600 3200
+Wire Wire Line
+	5600 3200 5600 5550
+Wire Wire Line
+	5600 5550 6500 5550
+Wire Wire Line
+	1800 8550 5600 8550
+Wire Wire Line
+	5600 8550 5600 5650
+Wire Wire Line
+	5600 5650 6500 5650
+Wire Wire Line
+	1800 8650 5700 8650
+Wire Wire Line
+	5700 8650 5700 5750
+Wire Wire Line
+	5700 5750 6500 5750
+Wire Wire Line
+	6500 5850 5800 5850
+Wire Wire Line
+	5800 5850 5800 8750
+Wire Wire Line
+	5800 8750 1800 8750
+Wire Wire Line
+	1800 8850 5900 8850
+Wire Wire Line
+	5900 8850 5900 5950
+Wire Wire Line
+	5900 5950 6500 5950
+$Comp
+L Device:R R1
+U 1 1 5FB5C1EA
+P 6200 6850
+F 0 "R1" V 5993 6850 50  0000 C CNN
+F 1 "3k3" V 6084 6850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6130 6850 50  0001 C CNN
+F 3 "~" H 6200 6850 50  0001 C CNN
+	1    6200 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FB5D7F3
+P 6200 7050
+F 0 "R2" V 5993 7050 50  0000 C CNN
+F 1 "3k3" V 6084 7050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6130 7050 50  0001 C CNN
+F 3 "~" H 6200 7050 50  0001 C CNN
+	1    6200 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 6850 6350 6850
+Wire Wire Line
+	6500 7050 6350 7050
+Wire Wire Line
+	6050 7050 5950 7050
+Wire Wire Line
+	1800 1100 5950 1100
+Wire Wire Line
+	6050 6850 5950 6850
+Connection ~ 5950 6850
+Wire Wire Line
+	5950 6850 5950 7050
+Wire Wire Line
+	5950 1100 5950 6850
+Wire Wire Line
+	6500 6350 6400 6350
+Wire Wire Line
+	6400 6350 6400 6450
+Wire Wire Line
+	6400 6950 6500 6950
+Wire Wire Line
+	6500 6450 6400 6450
+Connection ~ 6400 6450
+Wire Wire Line
+	6400 6450 6400 6550
+Wire Wire Line
+	6500 6550 6400 6550
+Connection ~ 6400 6550
+Wire Wire Line
+	6400 6550 6400 6650
+Wire Wire Line
+	6500 6650 6400 6650
+Connection ~ 6400 6650
+Wire Wire Line
+	6400 6650 6400 6750
+Wire Wire Line
+	6500 6750 6400 6750
+Connection ~ 6400 6750
+Wire Wire Line
+	6400 6750 6400 6950
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0109
+U 1 1 5FB85E99
+P 6400 7550
+F 0 "#PWR0109" H 6400 7300 50  0001 C CNN
+F 1 "GND" H 6405 7377 50  0000 C CNN
+F 2 "" H 6400 7550 60  0000 C CNN
+F 3 "" H 6400 7550 60  0000 C CNN
+	1    6400 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 6950 6400 7550
+Connection ~ 6400 6950
+Wire Wire Line
+	1800 10950 7000 10950
+Wire Wire Line
+	8500 6350 8500 7250
+Wire Wire Line
+	11400 1100 7800 1100
+Connection ~ 5950 1100
+Connection ~ 8500 10950
+Wire Wire Line
+	8450 1300 7500 1300
+Wire Wire Line
+	11350 4300 11400 4300
+Wire Wire Line
+	11400 2650 11550 2650
+Wire Wire Line
+	11400 1100 11400 2650
+Connection ~ 11400 2650
+Wire Wire Line
+	11400 2650 11400 4300
+Wire Wire Line
+	12500 2650 12600 2650
+Wire Wire Line
+	11350 4100 11950 4100
+Wire Wire Line
+	11950 4100 11950 4350
+Connection ~ 11950 4350
+Wire Wire Line
+	11850 4200 11850 6250
+Wire Wire Line
+	9600 3900 9600 4000
+Wire Wire Line
+	9600 4000 9900 4000
+Wire Wire Line
+	9900 4000 9900 4100
+Wire Wire Line
+	9900 4100 10050 4100
+Wire Wire Line
+	10050 4200 9800 4200
+Wire Wire Line
+	10050 4600 9900 4600
+Wire Wire Line
+	9900 4600 9900 4700
+Wire Wire Line
+	9900 4700 10050 4700
+Wire Wire Line
+	9900 4600 8450 4600
+Connection ~ 9900 4600
+Connection ~ 8450 4600
+Wire Wire Line
+	8450 4600 8450 1300
+Wire Wire Line
+	10050 4500 9950 4500
+Wire Wire Line
+	9950 4500 9950 5950
+Wire Wire Line
+	9950 5950 9900 5950
+Wire Wire Line
+	1800 1900 7950 1900
+Wire Wire Line
+	7950 1900 7950 5200
+Wire Wire Line
+	7950 5200 10050 5200
+Wire Wire Line
+	10050 5100 3500 5100
+Wire Wire Line
+	3500 5100 3500 7150
+Wire Wire Line
+	3500 7150 1800 7150
+Wire Wire Line
+	1800 7250 3600 7250
+Wire Wire Line
+	3600 7250 3600 5000
+Wire Wire Line
+	3600 5000 10050 5000
+Wire Wire Line
+	7900 4900 7900 2200
+Wire Wire Line
+	7900 2200 1800 2200
+Wire Wire Line
+	1800 2300 7850 2300
+Wire Wire Line
+	7850 2300 7850 4800
+Wire Wire Line
+	7850 4800 10050 4800
+Wire Wire Line
+	8500 11050 8500 10950
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR0110
+U 1 1 5FB8DBFD
+P 8500 11050
+F 0 "#PWR0110" H 8500 10800 50  0001 C CNN
+F 1 "GND" H 8505 10877 50  0000 C CNN
+F 2 "" H 8500 11050 60  0000 C CNN
+F 3 "" H 8500 11050 60  0000 C CNN
+	1    8500 11050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 5300 10050 10950
+Wire Wire Line
+	8500 10950 10050 10950
+Wire Wire Line
+	11800 10050 11800 4600
+Wire Wire Line
+	11750 4700 11750 10150
+Wire Wire Line
+	11700 10250 11700 4800
+Wire Wire Line
+	1800 5000 2800 5000
+Wire Wire Line
+	2800 5000 2800 3550
+Wire Wire Line
+	2800 3550 11450 3550
+Wire Wire Line
+	11450 3550 11450 4900
+Wire Wire Line
+	11450 4900 11350 4900
+Wire Wire Line
+	10050 4900 7900 4900
+Wire Wire Line
+	11850 6250 13950 6250
+Connection ~ 13950 6250
+Wire Wire Line
+	11350 4200 11850 4200
+Wire Wire Line
+	11350 4600 11800 4600
+Wire Wire Line
+	11350 4700 11750 4700
+Wire Wire Line
+	11350 4800 11700 4800
+Wire Wire Line
+	11350 5000 11500 5000
+Wire Wire Line
+	11500 5000 11500 3500
+Wire Wire Line
+	11500 3500 2700 3500
+Wire Wire Line
+	2700 3500 2700 4900
+Wire Wire Line
+	2700 4900 1800 4900
+Wire Wire Line
+	1800 4800 2600 4800
+Wire Wire Line
+	2600 4800 2600 3450
+Wire Wire Line
+	2600 3450 11550 3450
+Wire Wire Line
+	11550 3450 11550 5100
+Wire Wire Line
+	11550 5100 11350 5100
+Wire Wire Line
+	11350 5200 11600 5200
+Wire Wire Line
+	11600 3400 2550 3400
+Wire Wire Line
+	2550 3400 2550 4700
+Wire Wire Line
+	2550 4700 1800 4700
+Wire Wire Line
+	11600 3400 11600 5200
+Wire Wire Line
+	1800 4600 2500 4600
+Wire Wire Line
+	2500 4600 2500 3350
+Wire Wire Line
+	2500 3350 11650 3350
+Wire Wire Line
+	11650 3350 11650 5300
+Wire Wire Line
+	11650 5300 11350 5300
+Wire Wire Line
+	6500 6050 2300 6050
+Wire Wire Line
+	2300 6050 2300 3700
+Wire Wire Line
+	2300 3700 1800 3700
+Wire Wire Line
+	1800 3800 2250 3800
+Wire Wire Line
+	2250 3800 2250 6150
+Wire Wire Line
+	2250 6150 6500 6150
+Wire Wire Line
+	8500 5750 8500 5550
+Wire Wire Line
+	8500 5550 7800 5550
+Wire Wire Line
+	7800 5550 7800 1100
+Connection ~ 7800 1100
+Wire Wire Line
+	7800 1100 7000 1100
+Wire Wire Line
+	4050 4400 10050 4400
+$Comp
+L AmigaSID-rescue:hackup_C64-SID-Socket-NanoSwin_SID U2
+U 1 1 5FBA5542
+P 10700 5500
+F 0 "U2" H 10700 7265 50  0000 C CNN
+F 1 "hackup_C64-SID-Socket" H 10700 7174 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 10700 7150 50  0001 C CNN
+F 3 "" H 10700 5500 50  0001 C CNN
+	1    10700 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 4350 10050 4300
+Wire Wire Line
+	1800 10050 11800 10050
+Wire Wire Line
+	1800 10150 11750 10150
+Wire Wire Line
+	1800 10250 11700 10250
+Wire Wire Line
+	7000 7550 7000 10950
+Connection ~ 7000 10950
+Wire Wire Line
+	7000 10950 8500 10950
+Wire Wire Line
+	7000 5150 7000 1100
+Connection ~ 7000 1100
+Wire Wire Line
+	7000 1100 5950 1100
+$Comp
+L Oscillator:ACO-xxxMHz X1
+U 1 1 5FB76BB1
+P 8500 6050
+F 0 "X1" H 8157 6096 50  0000 R CNN
+F 1 "ACO-1MHz" H 8157 6005 50  0000 R CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 8950 5700 50  0001 C CNN
+F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 8400 6050 50  0001 C CNN
+	1    8500 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 6050 9050 6050
+$Comp
+L Oscillator:IQXO-70 X2
+U 1 1 5FB825D8
+P 7800 6950
+F 0 "X2" H 8144 6996 50  0000 L CNN
+F 1 "IQXO-70" H 8144 6905 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_IQD_IQXO70-4Pin_7.5x5.0mm" H 8475 6625 50  0001 C CNN
+F 3 "http://www.iqdfrequencyproducts.com/products/details/iqxo-70-11-30.pdf" H 7700 6950 50  0001 C CNN
+	1    7800 6950
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 6050
+Wire Wire Line
+	9050 6050 9300 6050
+Wire Wire Line
+	7800 5550 7800 6650
+Connection ~ 7800 5550
+Wire Wire Line
+	8100 6950 9050 6950
+Wire Wire Line
+	9050 6050 9050 6950
+Wire Wire Line
+	7800 7250 8500 7250
+Connection ~ 8500 7250
+Wire Wire Line
+	8500 7250 8500 10950
+$Comp
+L AmigaSID-rescue:zorro2port-zorro2port CON-Z21
+U 1 1 5FAE4BDD
+P 1800 5700
+F 0 "CON-Z21" H 1437 10747 60  0000 C CNN
+F 1 "zorro2port" H 1437 10641 60  0000 C CNN
+F 2 "Amiga2:zorro2card" H 1800 9400 60  0001 C CNN
+F 3 "" H 1800 9400 60  0000 C CNN
+	1    1800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP1
+U 1 1 5FBB6F12
+P 9950 2350
+F 0 "JP1" H 9950 2574 50  0000 C CNN
+F 1 "Jumper_3_Open" H 9950 2483 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9950 2350 50  0001 C CNN
+F 3 "~" H 9950 2350 50  0001 C CNN
+	1    9950 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP2
+U 1 1 5FBB7B63
+P 10700 2350
+F 0 "JP2" H 10700 2574 50  0000 C CNN
+F 1 "Jumper_3_Open" H 10700 2483 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10700 2350 50  0001 C CNN
+F 3 "~" H 10700 2350 50  0001 C CNN
+	1    10700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7809_TO220 U4
+U 1 1 5FBB894C
+P 12450 3500
+F 0 "U4" H 12450 3742 50  0000 C CNN
+F 1 "LM7809_TO220" H 12450 3651 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 12450 3725 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 12450 3450 50  0001 C CNN
+	1    12450 3500
+	1    0    0    -1  
+$EndComp
+Text Label 13000 1700 0    50   ~ 0
+12v
+Wire Wire Line
+	12150 3500 11800 3500
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR01
+U 1 1 5FBDAE98
+P 12450 3800
+F 0 "#PWR01" H 12450 3550 50  0001 C CNN
+F 1 "GND" H 12455 3627 50  0000 C CNN
+F 2 "" H 12450 3800 60  0000 C CNN
+F 3 "" H 12450 3800 60  0000 C CNN
+	1    12450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 3500 11800 3100
+Wire Wire Line
+	11800 3100 13800 3100
+Connection ~ 13800 3100
+Wire Wire Line
+	13800 3100 13800 4150
+$Comp
+L Device:C C10
+U 1 1 5FBB9EA3
+P 13150 3500
+F 0 "C10" V 12898 3500 50  0000 C CNN
+F 1 "47u" V 12989 3500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 13188 3350 50  0001 C CNN
+F 3 "~" H 13150 3500 50  0001 C CNN
+	1    13150 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12750 3500 13000 3500
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR02
+U 1 1 5FC0E4A7
+P 13550 3550
+F 0 "#PWR02" H 13550 3300 50  0001 C CNN
+F 1 "GND" H 13555 3377 50  0000 C CNN
+F 2 "" H 13550 3550 60  0000 C CNN
+F 3 "" H 13550 3550 60  0000 C CNN
+	1    13550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 3500 13550 3500
+Wire Wire Line
+	13550 3500 13550 3550
+Text Label 12850 3500 0    50   ~ 0
+9v
+$Comp
+L Jumper:Jumper_3_Open JP3
+U 1 1 5FC18E65
+P 14850 3150
+F 0 "JP3" H 14850 3374 50  0000 C CNN
+F 1 "Jumper_3_Open" H 14850 3283 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14850 3150 50  0001 C CNN
+F 3 "~" H 14850 3150 50  0001 C CNN
+	1    14850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 3150 14250 3150
+Wire Wire Line
+	15100 3150 15650 3150
+Wire Wire Line
+	14850 3300 14850 4000
+Wire Wire Line
+	14850 4000 11350 4000
+Text Label 14350 3150 0    50   ~ 0
+12v
+Text Label 15350 3150 0    50   ~ 0
+9v
+$Comp
+L Device:C C9
+U 1 1 5FC39449
+P 9200 3750
+F 0 "C9" H 9315 3796 50  0000 L CNN
+F 1 "470n" H 9315 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 9238 3600 50  0001 C CNN
+F 3 "~" H 9200 3750 50  0001 C CNN
+	1    9200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FC398DF
+P 8100 4200
+F 0 "C3" H 8215 4246 50  0000 L CNN
+F 1 "470n" H 8215 4155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 8138 4050 50  0001 C CNN
+F 3 "~" H 8100 4200 50  0001 C CNN
+	1    8100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3900 9400 3900
+Connection ~ 9600 3900
+Wire Wire Line
+	10050 2950 10700 2950
+Wire Wire Line
+	10700 2950 10700 2500
+Wire Wire Line
+	10050 2950 10050 4000
+Wire Wire Line
+	9800 2750 9950 2750
+Wire Wire Line
+	9950 2750 9950 2500
+Wire Wire Line
+	9800 2750 9800 4200
+Wire Wire Line
+	10200 2350 10200 1900
+Wire Wire Line
+	10200 1900 9200 1900
+Wire Wire Line
+	9200 1900 9200 2550
+Wire Wire Line
+	9600 3600 9600 2550
+Wire Wire Line
+	9600 2350 9700 2350
+Wire Wire Line
+	10450 2350 10450 1800
+Wire Wire Line
+	10450 1800 8100 1800
+Wire Wire Line
+	8100 1800 8100 3000
+Wire Wire Line
+	10950 2350 10950 2000
+Wire Wire Line
+	10950 2000 8650 2000
+$Comp
+L AmigaSID-rescue:GND-Gfx_card_cashe #PWR03
+U 1 1 5FCA0B44
+P 14950 4900
+F 0 "#PWR03" H 14950 4650 50  0001 C CNN
+F 1 "GND" H 14955 4727 50  0000 C CNN
+F 2 "" H 14950 4900 60  0000 C CNN
+F 3 "" H 14950 4900 60  0000 C CNN
+	1    14950 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 15300 4700
+Wire Wire Line
+	15300 4700 14700 4700
+Connection ~ 8650 4350
+Wire Wire Line
+	8100 4350 8300 4350
+Wire Wire Line
+	8650 4350 8800 4350
+Wire Wire Line
+	8650 2000 8650 3000
+$Comp
+L Device:C C7
+U 1 1 5FB1BC8E
+P 8650 4200
+F 0 "C7" H 8765 4246 50  0000 L CNN
+F 1 "470n" H 8765 4155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 8688 4050 50  0001 C CNN
+F 3 "~" H 8650 4200 50  0001 C CNN
+	1    8650 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5400 9300 5400
+Wire Wire Line
+	9300 5400 9300 5850
+$Comp
+L Device:C C12
+U 1 1 5FC40795
+P 8300 3800
+F 0 "C12" H 8415 3846 50  0000 L CNN
+F 1 "470n" H 8415 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8338 3650 50  0001 C CNN
+F 3 "~" H 8300 3800 50  0001 C CNN
+	1    8300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5FC40A1A
+P 8800 3800
+F 0 "C13" H 8915 3846 50  0000 L CNN
+F 1 "470n" H 8915 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8838 3650 50  0001 C CNN
+F 3 "~" H 8800 3800 50  0001 C CNN
+	1    8800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5FC40D10
+P 8950 3050
+F 0 "C14" H 9065 3096 50  0000 L CNN
+F 1 "470n" H 9065 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8988 2900 50  0001 C CNN
+F 3 "~" H 8950 3050 50  0001 C CNN
+	1    8950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5FC413B0
+P 9400 3050
+F 0 "C15" H 9515 3096 50  0000 L CNN
+F 1 "470n" H 9515 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9438 2900 50  0001 C CNN
+F 3 "~" H 9400 3050 50  0001 C CNN
+	1    9400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2900 8950 2550
+Wire Wire Line
+	8950 2550 9200 2550
+Connection ~ 9200 2550
+Wire Wire Line
+	9200 2550 9200 3600
+Wire Wire Line
+	8950 3200 8950 3900
+Wire Wire Line
+	8950 3900 9200 3900
+Connection ~ 9200 3900
+Wire Wire Line
+	9400 2900 9400 2550
+Wire Wire Line
+	9400 2550 9600 2550
+Connection ~ 9600 2550
+Wire Wire Line
+	9600 2550 9600 2350
+Wire Wire Line
+	9400 3200 9400 3900
+Connection ~ 9400 3900
+Wire Wire Line
+	9400 3900 9600 3900
+Wire Wire Line
+	8300 3650 8300 3000
+Wire Wire Line
+	8300 3000 8100 3000
+Connection ~ 8100 3000
+Wire Wire Line
+	8100 3000 8100 4050
+Wire Wire Line
+	8300 3950 8300 4350
+Connection ~ 8300 4350
+Wire Wire Line
+	8300 4350 8650 4350
+Wire Wire Line
+	8800 3650 8800 3000
+Wire Wire Line
+	8800 3000 8650 3000
+Connection ~ 8650 3000
+Wire Wire Line
+	8650 3000 8650 4050
+Wire Wire Line
+	8800 3950 8800 4350
+Connection ~ 8800 4350
+Wire Wire Line
+	8800 4350 10050 4350
+$Comp
+L Connector:AudioJack3 J3
+U 1 1 5FD024E7
+P 15250 3800
+F 0 "J3" H 15232 4125 50  0000 C CNN
+F 1 "AudioJack3" H 15232 4034 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal_CircularHoles" H 15250 3800 50  0001 C CNN
+F 3 "~" H 15250 3800 50  0001 C CNN
+	1    15250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 4200 15300 4700
+Wire Wire Line
+	15650 4200 15650 3900
+Wire Wire Line
+	15650 3800 15450 3800
+Wire Wire Line
+	15450 3900 15650 3900
+Connection ~ 15650 3900
+Wire Wire Line
+	15650 3900 15650 3800
+Wire Wire Line
+	15300 4200 15650 4200
+Wire Wire Line
+	14950 4100 15800 4100
+Wire Wire Line
+	15800 4100 15800 3700
+Wire Wire Line
+	15800 3700 15450 3700
+Wire Wire Line
+	14950 4100 14950 4900
+Text Label 10450 1100 0    50   ~ 0
++5V
+$EndSCHEMATC
